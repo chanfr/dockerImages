@@ -14,6 +14,7 @@ RUN apt-get install -y \
     ca-certificates \
     curl \
     gnupg2 \
+    virtualenv \
     software-properties-common
 
 RUN curl -fsSL https://download.docker.com/linux/$(. /etc/os-release; echo "$ID")/gpg | apt-key add -
